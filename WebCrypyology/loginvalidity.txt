@@ -1,0 +1,10 @@
+create or replace procedure loginidavailablity
+(
+ loginname userlogin.NAME%TYPE,
+ logid out userlogin.NAME%TYPE
+)
+is
+begin
+	 select name  into logid from userdetails where name=loginname;
+end loginidavailablity;
+/

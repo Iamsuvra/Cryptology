@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<servlet>
+		<servlet-name>one</servlet-name>
+		<servlet-class>com.wc.action.LoginAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>one</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>InitServlet</servlet-name>
+		<servlet-class>com.wc.DbUtil.InitServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/config/system.properties</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InitServlet</servlet-name>
+		<url-pattern>/initservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>two</servlet-name>
+		<servlet-class>com.wc.action.LogoutAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>two</servlet-name>
+		<url-pattern>/LogoutAction</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>three</servlet-name>
+		<servlet-class>com.wc.action.InboxAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>three</servlet-name>
+		<url-pattern>/InboxAction</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>four</servlet-name>
+		<servlet-class>com.wc.action.CreateNewMail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>four</servlet-name>
+		<url-pattern>/CreateNewMail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>five</servlet-name>
+		<servlet-class>com.wc.action.ShowMailsAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>five</servlet-name>
+		<url-pattern>/ShowMailsAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>six</servlet-name>
+		<servlet-class>com.wc.action.ViewProfileAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>six</servlet-name>
+		<url-pattern>/ViewProfileAction</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>seven</servlet-name>
+		<servlet-class>com.wc.action.ShowUserAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>seven</servlet-name>
+		<url-pattern>/ShowUserAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>eight</servlet-name>
+		<servlet-class>com.wc.action.GetAttachment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>eight</servlet-name>
+		<url-pattern>/GetAttachment</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>nine</servlet-name>
+		<servlet-class>com.wc.action.DeleteMail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>nine</servlet-name>
+		<url-pattern>/DeleteMail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ten1</servlet-name>
+		<servlet-class>com.wc.action.RecoverPassAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ten1</servlet-name>
+		<url-pattern>/recoverpass</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ten2</servlet-name>
+		<servlet-class>com.wc.action.NewpassServlet1</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePassAction</servlet-name>
+    <servlet-class>com.wc.action.ChangePassAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegistrationAction</servlet-name>
+    <servlet-class>com.wc.action.RegistrationAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.wc.action.ChangePasswordAction</servlet-class>
+  </servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>ten2</servlet-name>
+		<url-pattern>/new1</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePassAction</servlet-name>
+    <url-pattern>/ChangePassAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <url-pattern>/ChangePasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistrationAction</servlet-name>
+    <url-pattern>/RegistrationAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+		<servlet-name>ten3</servlet-name>
+		<servlet-class>com.wc.action.ChekUserAction</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>com.wc.action.Test</servlet-class>
+  </servlet>
+
+ <servlet-mapping>
+    <servlet-name>ten3</servlet-name>
+    <url-pattern>/ChekUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+
+
+	
+	
+	
+	
+<welcome-file-list>
+
+
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

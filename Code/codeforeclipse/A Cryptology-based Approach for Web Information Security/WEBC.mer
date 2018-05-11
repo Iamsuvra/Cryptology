@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="7" database="WEBC" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" labelsVisible="true" />
+  <Tables>
+    <Table name="ADDRESSES">
+      <Drawing expanded="true" location="99,266" dimensions="184,189" />
+      <Columns>
+        <Column name="ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="12" />
+        </Column>
+        <Column name="ADDRESSID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="12" />
+        </Column>
+        <Column name="HOUSENO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="STREET" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="STATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="COUNTRY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="PINCODE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="ADMININBOX">
+      <Drawing expanded="true" location="135,549" dimensions="207,169" />
+      <Columns>
+        <Column name="MSGNO" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="12" />
+        </Column>
+        <Column name="MSG_FROM" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="MSG_TO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="MSG" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="1000" />
+        </Column>
+        <Column name="ATTACHMENT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="BLOB" size="4000" />
+        </Column>
+        <Column name="DATE_TIME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="28" />
+        </Column>
+        <Column name="ATTACHNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="INBOX">
+      <Drawing expanded="true" location="421,141" dimensions="207,189" />
+      <Columns>
+        <Column name="MSGNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="12" />
+        </Column>
+        <Column name="MSG_FROM" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="MSG_TO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="MSG" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="1000" />
+        </Column>
+        <Column name="ATTACHMENT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="BLOB" size="4000" />
+        </Column>
+        <Column name="DATE_TIME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="28" />
+        </Column>
+        <Column name="ATTACHNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="200" />
+        </Column>
+        <Column name="ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="USERLOGIN">
+      <Drawing expanded="true" location="368,475" dimensions="190,289" />
+      <Columns>
+        <Column name="ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="12" />
+        </Column>
+        <Column name="FNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="15" />
+        </Column>
+        <Column name="LNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="15" />
+        </Column>
+        <Column name="DOB" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="GENDER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="12" />
+        </Column>
+        <Column name="LOGIN_DATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="15" />
+        </Column>
+        <Column name="PASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="15" />
+        </Column>
+        <Column name="ROLE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="15" />
+        </Column>
+        <Column name="SQUES" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="40" />
+        </Column>
+        <Column name="SANS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="40" />
+        </Column>
+        <Column name="PHOTO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="BLOB" size="4000" />
+        </Column>
+        <Column name="PHONENO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="15" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships>
+    <Relationship name="SYS_C0025258">
+      <Details primary_table="USERLOGIN" foreign_table="ADDRESSES">
+        <PrimaryKeys>
+          <ColumnName name="ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="FK_ID">
+      <Details primary_table="USERLOGIN" foreign_table="INBOX">
+        <PrimaryKeys>
+          <ColumnName name="ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+  </Relationships>
+</ERDiagram>
+

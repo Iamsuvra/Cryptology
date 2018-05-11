@@ -1,0 +1,24 @@
+<input type="file" name="FILENAME"  size="20" onchange="check_extension(this.value,"upload");"/>
+<input type="submit" id="upload" name="upload" value="Attach" disabled="disabled" />
+
+
+
+var hash = {
+  'jpg'  : 1,
+  'txt' : 1,
+};
+
+function check_extension(filename,submitId) {
+      var re = /\..+$/;
+      var ext = filename.match(re);
+      var submitEl = document.getElementById(submitId);
+      if (hash[ext]) {
+        submitEl.disabled = false;
+        return true;
+      } else {
+        alert("Invalid filename, please select another file");
+        submitEl.disabled = true;
+
+        return false;
+      }
+}
